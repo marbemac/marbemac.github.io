@@ -2,19 +2,25 @@
 layout: default
 ---
 
-<div class="home">
+<ul class='social-strip'>
+  <li>
+    <a title='Email' href='mailto:{{ site.email }}' target='_blank'><i class='fa fa-envelope-square'></i></a>
+  </li>
+  <li>
+    <a title='Github' href='https://github.com/{{ site.github_username }}' target='_blank'><i class='fa fa-github-square'></i></a>
+  </li>
+  <li>
+    <a title='Twitter' href='https://twitter.com/{{ site.twitter_username }}' target='_blank'><i class='fa fa-twitter-square'></i></a>
+  </li>
+  <li>
+    <a title='LinkedIn' href='https://linkedin.com/{{ site.linkedin_username }}' target='_blank'><i class='fa fa-linkedin-square'></i></a>
+  </li>
+</ul>
 
-  <h1>Posts</h1>
-
-  <ul class="posts">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-date">{{ post.date | date: "%b %-d, %Y" }}</span>
-        <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-      </li>
-    {% endfor %}
-  </ul>
-
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
-
-</div>
+<h1 class='title'>Marc MacLeod</h1>
+<h2 class='subtitle'>Designer & Engineer</h2>
+<h2 class='bio'>
+  I create for the Web and iOS. 
+  <br /> 
+  I specialize in Node.js, Ruby, API architecture, Meteor, Objective C, and client side frameworks like Ember and Backbone.
+</h2>
