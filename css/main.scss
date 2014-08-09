@@ -65,3 +65,48 @@ h1 {
 	max-width: 560px;
 	margin: auto;
 }
+
+.portfolio-section {
+	margin-top: 110px;
+	overflow: hidden;
+
+	>h3 {
+		font-size: 20px;
+		text-transform: uppercase;
+		margin-bottom: 40px;
+	}
+}
+
+.portfolio-item {
+	width: 33.33%;
+	float: left;
+
+	.image {
+		width: 125px;
+		height: 125px;
+		border-radius: 50%;
+		box-shadow: 0 0 2px rgba(0,0,0,0.2);
+		margin: auto;
+		overflow: hidden;
+		
+		img {
+			width: 100%;
+			height: 100%;
+		}
+	}
+	.name {
+		font-weight: bold;
+		font-size: 16px;
+		margin: 20px 0 2px 0;
+		display: block;
+	}
+	.tech {
+		font-size: 12px;
+		margin-bottom: 20px;
+	}
+	p {
+		font-size: 12px;
+		max-width: 200px;
+		margin: auto;
+	}
+}
